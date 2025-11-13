@@ -19,7 +19,6 @@ const client = new MongoClient(uri, {
 });
 async function run() {
   try {
-    // Connect to 	(optional starting in v4.7)
     await client.connect();
 
     const userDb = client.db('asstenDb')
